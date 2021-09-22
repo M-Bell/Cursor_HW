@@ -1,12 +1,12 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Tester {
+public class HW2 {
     private static final Scanner scanner = new Scanner(System.in);
     private static final Random rnd = new Random();
 
     public static void main(String[] args) {
-        System.out.print("1. Sort descending");
+        System.out.println("1. Sort descending");
         int[] firstArray = new int[]{2, 3, 1, 7, 11};
         System.out.println("Original array");
         printArray(firstArray);
@@ -16,7 +16,7 @@ public class Tester {
         System.out.println("==============================================");
 
         System.out.println("2. Sum of positive elements");
-        System.out.println("Enter array size: ");
+        System.out.print("Enter array size: ");
         int arraySize = scanner.nextInt();
         int[] secondArray = createRandomArray(arraySize);
         printArray(secondArray);
@@ -25,7 +25,7 @@ public class Tester {
         System.out.println("==============================================");
 
         System.out.println("3. Array average");
-        System.out.println("Enter array size: ");
+        System.out.print("Enter array size: ");
         arraySize = scanner.nextInt();
         int[] thirdArray = createRandomArray(arraySize);
         printArray(thirdArray);
@@ -33,7 +33,7 @@ public class Tester {
         System.out.println("Average = " + average);
         System.out.println("==============================================");
 
-        System.out.print("4. Remove duplicates");
+        System.out.println("4. Remove duplicates");
         int[] fourthArray = new int[]{3, 2, 3, 1, 4, 2, 8, 3};
         System.out.println("Original array");
         printArray(fourthArray);
@@ -99,8 +99,10 @@ public class Tester {
     }
 
     private static void printArray(int[] firstArray) {
+        System.out.print("[ ");
         for (int j : firstArray) {
-            System.out.println(j);
+            System.out.print(j + " ");
         }
+        System.out.println(']');
     }
 }
