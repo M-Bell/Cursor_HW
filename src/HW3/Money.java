@@ -1,3 +1,5 @@
+package HW3;
+
 public class Money {
     private long bills;
     private byte coins;
