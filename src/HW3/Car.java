@@ -16,7 +16,7 @@ public class Car {
     }
 
     public void accelerate(int value) {
-        if(!engineOn){
+        if (!engineOn) {
             System.out.println("You cannot accelerate!!! Engine off");
             return;
         }
@@ -28,8 +28,8 @@ public class Car {
         return currentSpeed;
     }
 
-    public void drive(){
-        if(!engineOn){
+    public void drive() {
+        if (!engineOn) {
             System.out.println("Your engine is off, you cannot drive!");
             return;
         }

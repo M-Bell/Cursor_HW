@@ -3,7 +3,7 @@ package HW3;
 public class Test {
     public static void main(String[] args) {
         System.out.println("Task 1: ");
-        for (double i = 0; i < 2; i+=0.5) {
+        for (double i = 0; i < 2; i += 0.5) {
             Circle circle = new Circle(i);
             System.out.println("Circle radius = " + i + ";\nCircle area = " + circle.getArea() + "\n");
         }

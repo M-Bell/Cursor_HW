@@ -11,7 +11,7 @@ public class Money {
 
     public Money(double value) {
         this.bills = (long) value;
-        this.coins = (byte) ((value-bills) * 100);
+        this.coins = (byte) ((value - bills) * 100);
     }
 
     public static Money add(Money val1, Money val2) {
