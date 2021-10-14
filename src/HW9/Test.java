@@ -17,7 +17,7 @@ public class Test {
         ints.addLast(7);
         ints.addLast(6);
 
-        for (Integer a:ints) {
+        for (Integer a : ints) {
             System.out.println(a);
         }
 
@@ -33,22 +33,19 @@ public class Test {
         System.out.println("Contains 123: " + ints.contains(123));
         System.out.println("Added element at index 3: ");
         ints.addAt(77, 3);
-        for (Integer a:
-             ints) {
+        for (Integer a : ints) {
             System.out.println(a);
         }
 
         System.out.println("\nRemoved first and last elements");
         ints.removeFirst();
         ints.removeLast();
-        for (Integer a:
-                ints) {
+        for (Integer a : ints) {
             System.out.println(a);
         }
         System.out.println("\nRemoved element at 2 index");
         ints.removeAt(2);
-        for (Integer a:
-                ints) {
+        for (Integer a : ints) {
             System.out.println(a);
         }
 
