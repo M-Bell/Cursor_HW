@@ -1,4 +1,4 @@
-package HW10;
+package HW10.Task1;
 
 import java.util.HashSet;
 import java.util.List;
