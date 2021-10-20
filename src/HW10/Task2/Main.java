@@ -1,16 +1,19 @@
 package HW10.Task2;
 
-import java.util.*;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import static HW10.Task2.Main.Gender.*;
-import static HW10.Task2.Main.Country.*;
+
 import static HW10.Task2.Main.Continent.*;
-        /*
-            WARNING:
-            В цьому коді допоможе розібратися тільки дух святий...
-            Але він працює :)
-        */
+import static HW10.Task2.Main.Country.*;
+import static HW10.Task2.Main.Gender.FEMALE;
+import static HW10.Task2.Main.Gender.MALE;
+
+/*
+    WARNING:
+    В цьому коді допоможе розібратися тільки дух святий...
+    Але він працює :)
+*/
 public class Main {
     public static void main(String[] args) {
         List<Person> data = Stream.of(

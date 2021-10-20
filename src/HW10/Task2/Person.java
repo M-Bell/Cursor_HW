@@ -1,17 +1,6 @@
 package HW10.Task2;
 
-class Person{
-    private final String name;
-    private final int age;
-    private final Main.Gender gender;
-    private final Main.Country country;
-
-    public Person(String name, int age, Main.Gender gender, Main.Country country) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.country = country;
-    }
+record Person(String name, int age, Main.Gender gender, Main.Country country) {
 
     public String getName() {
         return name;

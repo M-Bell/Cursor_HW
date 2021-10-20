@@ -13,7 +13,7 @@ public class Main {
         Stream<String> input = Stream.of("John", "Smith", "John", "Doe", "Jane", "Doe");
 
         PersonList out = input.collect(toPersonList());
-        for (Person p: out) {
+        for (Person p : out) {
             System.out.println(p);
         }
 
@@ -30,7 +30,7 @@ public class Main {
         public PersonList(List<String> elements) {
             Objects.requireNonNull(elements, "elements must not be null");
             this.elements = new ArrayList<>(elements);
-            addSize = elements.size()/2;
+            addSize = elements.size() / 2;
             if (this.elements.size() % 2 != 0) {
                 throw new IllegalArgumentException("number of elements must have even size");
             }
