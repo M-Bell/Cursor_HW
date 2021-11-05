@@ -1,4 +1,4 @@
-package HW12;
+package HW16;
 
 public class Test {
     public static void main(String[] args) {
